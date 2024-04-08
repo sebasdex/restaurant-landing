@@ -5,6 +5,10 @@ export default {
     extend: {
       backgroundImage: {
         "slider-1": "url('/img/slider-1.webp')",
+        about: "url('/img/wall-about.avif')",
+      },
+      fontFamily: {
+        dynalight: ["Dynalight", "cursive"],
       },
     },
   },
