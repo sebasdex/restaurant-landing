@@ -1,5 +1,7 @@
 ---
-
+import CookedIcon from "../icons/CookedIcon.astro";
+import DeliveryIcon from "../icons/DeliveryIcon.astro";
+import Hours from "../icons/Hours.astro";
 ---
 
 <section
@@ -8,14 +10,14 @@
   <img
     src="/img/food.webp"
     alt="img-food"
-    class="w-28 h-28 object-cover absolute top-0 -left-8 rounded-full"
+    class="w-28 h-28 object-cover absolute top-0 -left-8 rounded-full md:left-8 md:w-40 md:h-40 md:top-5"
     loading="lazy"
     decoding="async"
   />
   <img
     src="/img/rest-vintage.webp"
     alt="img-rest-vintage"
-    class="w-28 h-28 object-cover absolute top-36 right-4 rounded-sm -rotate-12 border-4"
+    class="w-28 h-28 object-cover absolute top-36 right-4 rounded-sm -rotate-12 border-4 md:right-8 md:w-40 md:h-40 md:top-72"
     loading="lazy"
     decoding="async"
   />
@@ -47,22 +49,22 @@
       class="flex gap-2 min-w-96 items-center justify-center text-black font-bold p-2"
     >
       <article class="p-2 w-full">
-        <div class="h-20 w-full border"></div>
-        <p class="text-sm uppercase bg-amber-500 border h-16 p-2">
-          Free delivery
-        </p>
+        <div class="h-20 w-full border flex justify-center items-center">
+          <DeliveryIcon personalized="h-10 w-10 text-white" />
+        </div>
+        <p class="text-sm uppercase bg-amber-500 h-16 p-2">Free delivery</p>
       </article>
       <article class="p-2 w-full">
-        <div class="h-20 w-full border"></div>
-        <p class="text-sm uppercase bg-amber-500 border h-16 p-2">
-          Freshly cooked
-        </p>
+        <div class="h-20 w-full border flex justify-center items-center">
+          <CookedIcon personalized="h-10 w-10 text-white" />
+        </div>
+        <p class="text-sm uppercase bg-amber-500 h-16 p-2">Freshly cooked</p>
       </article>
       <article class="p-2 w-full">
-        <div class="h-20 w-full border"></div>
-        <p class="text-sm uppercase bg-amber-500 border h-16 p-2">
-          24 hours support
-        </p>
+        <div class="h-20 w-full border flex justify-center items-center">
+          <Hours personalized="h-10 w-10 text-white" />
+        </div>
+        <p class="text-sm uppercase bg-amber-500 h-16 p-2">24 hours support</p>
       </article>
     </div>
   </span>
